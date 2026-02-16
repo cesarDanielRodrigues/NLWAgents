@@ -24,7 +24,9 @@
   "scripts": {
     "dev": "node --env-file .env --experimental-strip-types --watch src/server.ts",
     "start": "node --env-file .env --experimental-strip-types src/server.ts",
-    "db:seed": "node --env-file .env --experimental-strip-types src/db/seed.ts"
+    "db:seed": "node --env-file .env --experimental-strip-types src/db/seed.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "type": "module",
   "version": "1.0.0"
